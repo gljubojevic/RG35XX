@@ -1,0 +1,158 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="RG35XX GarlicOS" LongName="RG35XX GarlicOS" Description="RG35XX GarlicOS media for all emulation platforms" Author="gljubojevic"/>
+	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Drawings>
+		<!-- Arcade Systems 
+		NOTE: nested include doesn`t work so needs to be embedded, content is same as ArcadeSystems.xml 
+		-->
+		<Item IfSystem="IsInTheListOrAncestors:75" TestOnly="true">
+			<Children>
+				<!-- Cabinet - Used as new reference for childrens -->
+				<Item Type="LocalFile" LocalFilePath="Cabinet.png">
+					<Display X="55%" Y="0%" Width="100!" Height="100%" Anchor="TopHCenter" />
+					<Children Reference="Parent">
+						<!-- Projected screenshot -->
+						<Item Type ="Include" LocalFilePath="ScreenShot.include.xml">
+							<Display Mode="Distord" X="18.29%" Y="28.35%" X2="70.67%" Y2="28.35%" X3="79.00%" Y3="73.05%" X4="30.41%" Y4="86.58%" Antialiasing="High" />
+						</Item>
+						<!-- Projected marquee -->
+						<Item Type ="Marquee">
+							<Display Mode="Distord" X="25.64%" Y="02.27%" X2="81.27%" Y2="08.54%" X3="82.68%" Y3="21.96%" X4="28.24%" Y4="19.91%" Antialiasing="High" />
+							<Fallback Type="ScreenMarqueeSmall">
+								<Fallback Type="LocalFile" LocalFilePath="ArcadeMarquee.jpg" />
+							</Fallback>
+						</Item>
+						<!-- Cabinet once again to anti-alias the srceenshot edges -->
+						<Item Type="LocalFile" LocalFilePath="Cabinet.png">
+							<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
+						</Item>
+					</Children>
+				</Item>
+				<!-- Wheel on right -->
+				<Item Type="Wheel">
+					<Display X="100%" Y="5%" Width="90!" Height="30!" Anchor="TopLeft" />
+					<Rotation Angle="90" XOffset="0%" YOffset="0%" />
+				</Item>
+				<!-- System Wheel on bottom left -->
+				<Item Type="SystemWheel">
+					<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
+				</Item>
+			</Children>
+		</Item>
+		<!-- Default for all systems -->
+		<Item IfSystem="IsNotInTheListOrAncestors:75" Type="Include" LocalFilePath="DefaultSystems.xml">
+			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
+		</Item>
+		<!-- GarlicOS RG35XX Controls overlay -->
+		<Item Type="LocalFile" LocalFilePath="GarlicOS-OverlayShadow.png">
+			<Display X="0%" Y="50%" Width="640" Height="480" KeepRatio="false" Anchor="VCenterLeft" Antialiasing="Medium" Transparency="0.0"/>
+		</Item>
+	</Drawings>
+</ImageComposition>
+<!--
+Arcade Cabinet: 924x924
+Marquee:
+x1,y1 = 237,21  = 25.64,02.27
+x2,y2 = 751,79  = 81.27,08.54
+x3,y3 = 764,203 = 82.68,21.96
+x4,y4 = 261,184 = 28.24,19.91
+Screen:
+x1,y1 = 169,262 = 18.29,28.35 
+x2,y2 = 653,262 = 70.67,28.35
+x3,y3 = 730,675 = 79.00,73.05
+x4,y4 = 281,800 = 30.41,86.58
+-->
+
+<!-- RG35XX System list
+Arcade
+ID		ROM path				System name
+75		"ARCADE"				"MAME"
+183		"COLECO"				"Coleco"
+6		"CPS1"					"Capcom Play System"
+7		"CPS2"					"Capcom Play System 2"
+8		"CPS3"					"Capcom Play System 3"
+75		"MAME2000"				"MAME"
+75		"MAME2003"				"MAME"
+75		"VARCADE"				"MAME"
+ID List: 75,183,6,7,8,
+
+
+Console
+ID		ROM path				System name
+26		"ATARI"					"Atari2600"
+134		"AMIGACD"				"Commodore Amiga CD"
+80		"FAIRCHILD"				"Fairchild Channel F"
+3		"FC"					"Nintendo Entertainment System"
+106		"FDS"					"Nintendo Family Computer Disk System"
+40		"FIFTYTWOHUNDRED"		"Atari 5200"
+142		"FBNEO"					"SNK Neo-Geo"
+115		"INTELLIVISION"			"Mattel Intellivision"
+27		"JAGUAR"				"Atari Jaguar"
+1		"MD"					"Sega Megadrive"
+2		"MS"					"Sega Master System"
+142		"NEOGEO"				"SNK Neo-Geo"
+70		"NEOCD"					"SNK Neo-geo CD-Rom"
+104		"ODYSSEY"				"Magnavox Odyssey²"
+29		"PANASONIC"				"Panasonic 3DO Interactive Multiplayer"
+31		"PCE"					"NEC PC Engine"
+114		"PCECD"					"NEC PC Engine CD-Rom"
+72		"PCFX"					"NEC PC-FX"
+57		"PS"					"Sony Playstation"
+107		"SATELLAVIEW"			"Nintendo Satellaview"
+109		"SEGASGONE"				"Sega SG-1000"
+20		"SEGACD"				"Mega-CD"
+41		"SEVENTYEIGHTHUNDRED"	"Atari 7800"
+105		"SGFX"					"NEC PC Engine SuperGrafx"
+4		"SFC"					"Super Nintendo Entertainment System"
+2		"SMS"					"Sega Master System"
+19		"THIRTYTWOX"			"Sega Megadrive 32x"
+216		"UZEBOX"				"Uzebox"
+102		"VECTREX"				"GCE Vectrex"
+104		"VIDEOPAC"				"Magnavox Odyssey²"
+ID List: 26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104
+
+
+Console portable
+ID		ROM path				System name
+9		"GB"					"Nintendo Game Boy"
+12		"GBA"					"Nintendo GameBoy Advance"
+10		"GBC"					"Nintendo Game Boy Color"
+21		"GG"					"Sega Game Gear"
+12		"GPSP"					"Nintendo GameBoy Advance"
+52		"GW"					"Nintendo Game & Watch"
+28		"LYNX"					"Atari Lynx"
+90		"MEGADUCK"				"Mega Duck"
+127		"SGB"					"Nintendo Super GameBoy"
+108		"SUFAMI"				"Bandai Sufami Turbo"
+207		"SUPERVISION"			"Watara Supervision"
+25		"NGP"					"SNK Neo-Geo Pocket"
+11		"VB"					"Nintendo virtualboy"
+ID List: 9,12,10,21,12,52,28,90,127,108,207,25,11
+
+
+Computer
+ID		ROM path				System name
+64		"AMIGA"					"Commodore Amiga"
+42		"ATARIST"				"Atari ST"
+66		"COMMODORE"				"Commodore 64"
+65		"CPC"					"Amstrad CPC 464"
+135		"DOS"					"Microsoft MS-DOS"
+43		"EIGHTHUNDRED"			"Atari 130XE"
+113		"MSX"					"Microsoft MSX"
+221		"PCEIGHTYEIGHT"			"PC-8801"
+208		"PCNINETYEIGHT"			"PC-9801"
+79		"X68000"				"Sharp X68000"
+220		"XONE"					"Sharp X1"
+77		"ZXEIGHTYONE"			"Sinclair ZX-81"
+76		"ZXS"					"Sinclair ZX-Spectrum"
+ID List: 64,42,66,65,135,43,113,221,208,79,220,77,76
+
+
+Virtaul machines
+234		"PICO"					"PICO-8"
+123		"SCUMMVM"				"ScummVM"
+222		"TIC"					"TIC-80"
+ID List: 234,123,222
+
+
+-->

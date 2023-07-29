@@ -1,0 +1,18 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="RG35XX GarlicOS Default" LongName="RG35XX GarlicOS Default system" Description="RG35XX GarlicOS media for all emulation platforms" Author="gljubojevic"/>
+	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Drawings>
+		<Item Type="Screenshot">
+			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>
+			<!-- Fallback Type="ScreenshotTitle" / -->
+		</Item>
+		<Item Type="Box3D">
+			<Display X="98%" Y="75%" Width="40%" Height="40%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
+			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
+		</Item>
+		<Item Type="Wheel">
+			<Display X="38%" Y="5%" Width="32%" Height="24%" Anchor="TopLeft" Antialiasing="Medium" />
+			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
+		</Item>
+	</Drawings>
+</ImageComposition>

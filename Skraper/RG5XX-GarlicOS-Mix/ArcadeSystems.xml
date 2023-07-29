@@ -1,0 +1,53 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="RG35XX GarlicOS Arcade" LongName="RG35XX GarlicOS Arcade" Description="RG35XX GarlicOS Arcade cabinet w/ resources mapping, based on ArcadeSun by MarbleMad &amp; Bkg2k" Author="gljubojevic" />
+	<Viewport Color="#00000000" Width="640" Height="480" />
+	<Drawings>
+		<!-- Cabinet - Used as new reference for childrens -->
+		<Item Type="LocalFile" LocalFilePath="Cabinet.png">
+			<Display X="55%" Y="0%" Width="100!" Height="100%" Anchor="TopHCenter" />
+			<Children Reference="Parent">
+				<!-- Projected screenshot -->
+				<Item Type ="Include" LocalFilePath="ScreenShot.include.xml">
+					<Display Mode="Distord" X="18.29%" Y="28.35%" X2="70.67%" Y2="28.35%" X3="79.00%" Y3="73.05%" X4="30.41%" Y4="86.58%" Antialiasing="High" />
+				</Item>
+				<!-- Projected marquee -->
+				<Item Type ="Marquee">
+					<Display Mode="Distord" X="25.64%" Y="02.27%" X2="81.27%" Y2="08.54%" X3="82.68%" Y3="21.96%" X4="28.24%" Y4="19.91%" Antialiasing="High" />
+					<Fallback Type="ScreenMarqueeSmall">
+						<Fallback Type="LocalFile" LocalFilePath="ArcadeMarquee.jpg" />
+					</Fallback>
+				</Item>
+				<!-- Cabinet once again to anti-alias the srceenshot edges -->
+				<Item Type="LocalFile" LocalFilePath="Cabinet.png">
+					<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
+				</Item>
+			</Children>
+		</Item>
+		<!-- Wheel on right -->
+		<Item Type="Wheel">
+			<Display X="100%" Y="5%" Width="90!" Height="30!" Anchor="TopLeft" />
+			<Rotation Angle="90" XOffset="0%" YOffset="0%" />
+		</Item>
+		<!-- System Wheel on bottom left -->
+		<Item Type="SystemWheel">
+			<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
+		</Item>
+	</Drawings>
+</ImageComposition>
+<!--
+
+Cabinet: 924x924
+
+Marquee:
+x1,y1 = 237,21  = 25.64,02.27
+x2,y2 = 751,79  = 81.27,08.54
+x3,y3 = 764,203 = 82.68,21.96
+x4,y4 = 261,184 = 28.24,19.91
+
+Screen:
+x1,y1 = 169,262 = 18.29,28.35 
+x2,y2 = 653,262 = 70.67,28.35
+x3,y3 = 730,675 = 79.00,73.05
+x4,y4 = 281,800 = 30.41,86.58
+
+-->
