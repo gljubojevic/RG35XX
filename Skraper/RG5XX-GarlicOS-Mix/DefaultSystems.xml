@@ -7,12 +7,16 @@
 			<!-- Fallback Type="ScreenshotTitle" / -->
 		</Item>
 		<Item Type="Box3D">
-			<Display X="98%" Y="75%" Width="40%" Height="40%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
+			<Display X="98%" Y="75%" Width="50%" Height="50%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
 			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
 		</Item>
 		<Item Type="Wheel">
-			<Display X="38%" Y="5%" Width="32%" Height="24%" Anchor="TopLeft" Antialiasing="Medium" />
+			<Display X="50%" Y="5%" Width="40%" Height="30%" Anchor="TopHCenter" />
 			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
+		</Item>
+		<!-- System Wheel on bottom left -->
+		<Item Type="SystemWheel">
+			<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
 		</Item>
 	</Drawings>
 </ImageComposition>

@@ -1,0 +1,32 @@
+﻿<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="8Bit Computers 4:3" LongName="Good ol'8bit computers" Description="Old fashioned TV for computers from our childhood!" Author="Bkg2k" />
+	<Viewport Color="#00FFFFFF" Width="640" Height="480" />
+	<Drawings>
+		<!-- TV frame -->
+		<Item Type="LocalFile" LocalFilePath="tv.png">
+			<Display X="0" Y="0" Width="100%" Height="100%" Anchor="TopLeft" />
+			<Children Reference="Parent">
+				<Item Type="Include" LocalFilePath="ScreenShot8bitComputer.include.xml">
+					<Display Mode="Barrel" BarrelLevel="2" X="4.43%" Y="10.24%" Width="72.88%" Height="72.47%" Antialiasing="High" />
+				</Item>
+			</Children>
+		</Item>
+		<!-- TV frame once again to anti-alias the srceenshot edges -->
+		<Item Type="LocalFile" LocalFilePath="tv.png">
+			<Display X="0" Y="0" Width="100%" Height="100%" Anchor="TopLeft" />
+		</Item>
+		<Item Type="Box3D">
+			<Display X="98%" Y="75%" Width="40%" Height="40%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
+			<Fallback Type="SystemPhoto" />
+		</Item>
+		<!-- Wheel on top -->
+		<Item Type="Wheel">
+			<Display X="0%" Y="100%" Width="75%" Height="30%" Anchor="BottomLeft" />
+			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF"  TextAlign="VCenterHCenter" FontFile="font.ttf" / -->
+		</Item>
+		<!-- System Wheel on bottom left -->
+		<Item Type="SystemWheel">
+			<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
+		</Item>
+	</Drawings>
+</ImageComposition>

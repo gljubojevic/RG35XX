@@ -3,8 +3,7 @@
 	<Viewport Color="#00000000" Width="640" Height="480"/>
 	<Drawings>
 		<!-- Arcade Systems 
-		NOTE: nested include doesn`t work so needs to be embedded, content is same as ArcadeSystems.xml 
-		-->
+		NOTE: nested include doesn`t work so needs to be embedded, content is same as ArcadeSystems.xml -->
 		<Item IfSystem="IsInTheListOrAncestors:75" TestOnly="true">
 			<Children>
 				<!-- Cabinet - Used as new reference for childrens -->
@@ -39,8 +38,50 @@
 				</Item>
 			</Children>
 		</Item>
-		<!-- Default for all systems -->
-		<Item IfSystem="IsNotInTheListOrAncestors:75" Type="Include" LocalFilePath="DefaultSystems.xml">
+		<!-- Console 
+		<Item IfSystem="IsInTheList:26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104" Type="Include" LocalFilePath="DefaultSystems.xml">
+			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
+		</Item>
+		-->
+		<!-- Console portable 
+		<Item IfSystem="IsInTheList:9,12,10,21,12,52,28,90,127,108,207,25,11" Type="Include" LocalFilePath="DefaultSystems.xml">
+			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
+		</Item>
+		-->
+		<!-- 8bit Computer 
+		NOTE: nested include doesn`t work so needs to be embedded, content is same as 8BitComputers.xml -->
+		<Item IfSystem="IsInTheList:66,65,43,113,77,76" TestOnly="true">
+			<Children>
+				<!-- TV frame -->
+				<Item Type="LocalFile" LocalFilePath="tv.png">
+					<Display X="0" Y="0" Width="100%" Height="100%" Anchor="TopLeft" />
+					<Children Reference="Parent">
+						<Item Type="Include" LocalFilePath="ScreenShot8bitComputer.include.xml">
+							<Display Mode="Barrel" BarrelLevel="2" X="4.43%" Y="10.24%" Width="72.88%" Height="72.47%" Antialiasing="High" />
+						</Item>
+					</Children>
+				</Item>
+				<!-- TV frame once again to anti-alias the srceenshot edges -->
+				<Item Type="LocalFile" LocalFilePath="tv.png">
+					<Display X="0" Y="0" Width="100%" Height="100%" Anchor="TopLeft" />
+				</Item>
+				<Item Type="Box3D">
+					<Display X="98%" Y="75%" Width="50%" Height="50%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
+					<Fallback Type="SystemPhoto" />
+				</Item>
+				<!-- Wheel on top -->
+				<Item Type="Wheel">
+					<Display X="50%" Y="5%" Width="40%" Height="30%" Anchor="TopHCenter" />
+					<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF"  TextAlign="VCenterHCenter" FontFile="font.ttf" / -->
+				</Item>
+				<!-- System Wheel on bottom left -->
+				<Item Type="SystemWheel">
+					<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
+				</Item>
+			</Children>
+		</Item>
+		<!-- Default for all other systems, Computer, Vitrual machines -->
+		<Item IfSystem="IsNotInTheList:75,183,6,7,8,26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104,9,12,10,21,12,52,28,90,127,108,207,25,11,66,65,43,113,77,76" Type="Include" LocalFilePath="DefaultSystems.xml">
 			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
 		</Item>
 		<!-- GarlicOS RG35XX Controls overlay -->
@@ -49,6 +90,10 @@
 		</Item>
 	</Drawings>
 </ImageComposition>
+<!-- NOTE: About not working features
+nested includes don`t work
+mutiple include with same name don't work 
+-->
 <!--
 Arcade Cabinet: 924x924
 Marquee:
@@ -74,7 +119,7 @@ ID		ROM path				System name
 75		"MAME2000"				"MAME"
 75		"MAME2003"				"MAME"
 75		"VARCADE"				"MAME"
-ID List: 75,183,6,7,8,
+ID List: 75,183,6,7,8
 
 
 Console
@@ -130,22 +175,27 @@ ID		ROM path				System name
 ID List: 9,12,10,21,12,52,28,90,127,108,207,25,11
 
 
+8bit Computer
+ID		ROM path				System name
+66		"COMMODORE"				"Commodore 64"
+65		"CPC"					"Amstrad CPC 464"
+43		"EIGHTHUNDRED"			"Atari 130XE"
+113		"MSX"					"Microsoft MSX"
+77		"ZXEIGHTYONE"			"Sinclair ZX-81"
+76		"ZXS"					"Sinclair ZX-Spectrum"
+ID List: 66,65,43,113,77,76
+
+
 Computer
 ID		ROM path				System name
 64		"AMIGA"					"Commodore Amiga"
 42		"ATARIST"				"Atari ST"
-66		"COMMODORE"				"Commodore 64"
-65		"CPC"					"Amstrad CPC 464"
 135		"DOS"					"Microsoft MS-DOS"
-43		"EIGHTHUNDRED"			"Atari 130XE"
-113		"MSX"					"Microsoft MSX"
 221		"PCEIGHTYEIGHT"			"PC-8801"
 208		"PCNINETYEIGHT"			"PC-9801"
 79		"X68000"				"Sharp X68000"
 220		"XONE"					"Sharp X1"
-77		"ZXEIGHTYONE"			"Sinclair ZX-81"
-76		"ZXS"					"Sinclair ZX-Spectrum"
-ID List: 64,42,66,65,135,43,113,221,208,79,220,77,76
+ID List: 64,42,135,221,208,79,220
 
 
 Virtaul machines
