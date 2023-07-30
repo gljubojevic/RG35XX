@@ -4,7 +4,9 @@
 	<Drawings>
 		<Item Type="Screenshot">
 			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>
-			<!-- Fallback Type="ScreenshotTitle" / -->
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<Item Type="Box3D">
 			<Display X="98%" Y="75%" Width="50%" Height="50%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>

@@ -5,50 +5,86 @@
 		<!-- 9 "GB"	"Nintendo Game Boy" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:9">
 			<Display X="50%" Y="50%" Width="61.8%" Height="73.5%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 12	"GBA"	"Nintendo GameBoy Advance" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:12">
 			<Display X="50%" Y="50%" Width="94%" Height="83.5%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 10	"GBC"	"Nintendo Game Boy Color" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:10">
 			<Display X="50%" Y="50%" Width="62.54%" Height="75%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 21	"GG"	"Sega Game Gear" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:21">
 			<Display X="50%" Y="50%" Width="52.8%" Height="53%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 52	"GW"	"Nintendo Game & Watch" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:52">
 			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 28	"LYNX"	"Atari Lynx" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:28">
 			<Display X="50%" Y="50%" Width="62.54%" Height="53%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 90	"MEGADUCK"	"Mega Duck" No basel-->
 		<Item Type="Screenshot" IfSystem="IsInTheList:90">
 			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 127	"SGB"	"Nintendo Super GameBoy" No basel-->
 		<Item Type="Screenshot" IfSystem="IsInTheList:127">
 			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 108	"SUFAMI"	"Bandai Sufami Turbo" No basel-->
 		<Item Type="Screenshot" IfSystem="IsInTheList:108">
 			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 207	"SUPERVISION"	"Watara Supervision" No basel-->
 		<Item Type="Screenshot" IfSystem="IsInTheList:207">
 			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 25	"NGP"	"SNK Neo-Geo Pocket" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:25">
 			<Display X="50%" Y="50%" Width="62.92%" Height="80%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<!-- 11	"VB"	"Nintendo virtualboy" -->
 		<Item Type="Screenshot" IfSystem="IsInTheList:11">
 			<Display X="50%" Y="50%" Width="86.51%" Height="72.5%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
 		</Item>
 		<Item Type="SystemBezel43">
 			<Display X="100%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None"/>
