@@ -38,11 +38,10 @@
 				</Item>
 			</Children>
 		</Item>
-		<!-- Console 
-		<Item IfSystem="IsInTheList:26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104" Type="Include" LocalFilePath="DefaultSystems.xml">
+		<!-- Console -->
+		<Item IfSystem="IsInTheList:26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104" Type="Include" LocalFilePath="Console.xml">
 			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
 		</Item>
-		-->
 		<!-- Console handheld -->
 		<Item IfSystem="IsInTheList:9,12,10,21,12,52,28,90,127,108,207,25,11" Type="Include" LocalFilePath="ConsoleHandheld.xml">
 			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
