@@ -90,10 +90,10 @@
 			<Display X="100%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None"/>
 		</Item>
 		<Item Type="Support">
-			<Display X="95%" Y="75%" Width="40%" Height="40%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
+			<Display X="98%" Y="75%" Width="40%" Height="40%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="Medium"/>
 		</Item>
 		<Item Type="Wheel">
-			<Display X="50%" Y="1%" Width="40%" Height="30%" Anchor="TopHCenter" />
+			<Display X="50%" Y="0%" Width="40%" Height="30%" Anchor="TopHCenter" />
 		</Item>
 	</Drawings>
 </ImageComposition>
