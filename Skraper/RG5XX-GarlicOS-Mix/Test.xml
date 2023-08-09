@@ -1,0 +1,22 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="Console handheld RG35XX GarlicOS" LongName="Console handheld RG35XX GarlicOS systems" Description="Console handheld RG35XX GarlicOS media for all handheld consoles" Author="gljubojevic"/>
+	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Drawings>
+		<!-- 9 "GB"	"Nintendo Game Boy" -->
+		<Item Type="Screenshot">
+			<Display X="50%" Y="50%" Width="61.8%" Height="73.5%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+			</Fallback>
+		</Item>
+		<Item Type="SystemBezel43">
+			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None"/>
+		</Item>
+		<Item Type="Support">
+			<Display X="96%" Y="96%" Width="35%" Height="35%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
+		</Item>
+		<Item Type="Wheel">
+			<Display X="50%" Y="0%" Width="40%" Height="30%" Anchor="TopHCenter" />
+		</Item>
+	</Drawings>
+</ImageComposition>
