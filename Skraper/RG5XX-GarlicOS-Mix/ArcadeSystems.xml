@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX GarlicOS Arcade" LongName="RG35XX GarlicOS Arcade" Description="RG35XX GarlicOS Arcade cabinet w/ resources mapping, based on ArcadeSun by MarbleMad &amp; Bkg2k" Author="gljubojevic" />
-	<Viewport Color="#00000000" Width="640" Height="480" />
+	<Viewport Color="#ff000000" Width="640" Height="480" />
 	<Drawings>
 		<!-- Cabinet - Used as new reference for childrens -->
 		<Item Type="LocalFile" LocalFilePath="Cabinet.png">

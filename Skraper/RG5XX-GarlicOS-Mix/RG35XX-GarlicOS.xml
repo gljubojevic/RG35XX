@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX GarlicOS" LongName="RG35XX GarlicOS" Description="RG35XX GarlicOS media for all emulation platforms" Author="gljubojevic"/>
-	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Viewport Color="#ff000000" Width="640" Height="480"/>
 	<Drawings>
 		<!-- Arcade Systems 
 		NOTE: nested include doesn`t work so needs to be embedded, content is same as ArcadeSystems.xml -->

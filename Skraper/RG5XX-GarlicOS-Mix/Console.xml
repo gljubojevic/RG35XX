@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX GarlicOS Console" LongName="RG35XX GarlicOS Console systems" Description="RG35XX GarlicOS media for console platforms" Author="gljubojevic"/>
-	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Viewport Color="#ff000000" Width="640" Height="480"/>
 	<Drawings>
 		<Item Type="Screenshot">
 			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>
@@ -17,8 +17,10 @@
 		</Item>
 		<!-- System Photo on bottom left -->
 		<Item Type="SystemPhoto">
-			<Display X="0%" Y="90%" Width="40%" Height="40%" Anchor="BottomLeft" />
-			<Fallback Type="SystemPicture" />
+			<Display X="2%" Y="98%" Width="35%" Height="35%" Anchor="BottomLeft" />
+			<Fallback Type="SystemPicture">
+				<Fallback Type="SystemWheel" />
+			</Fallback>
 		</Item>
 	</Drawings>
 </ImageComposition>

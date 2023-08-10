@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX GarlicOS Default" LongName="RG35XX GarlicOS Default system" Description="RG35XX GarlicOS media for all emulation platforms" Author="gljubojevic"/>
-	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Viewport Color="#ff000000" Width="640" Height="480"/>
 	<Drawings>
 		<Item Type="Screenshot">
 			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>

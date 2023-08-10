@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="Console handheld RG35XX GarlicOS" LongName="Console handheld RG35XX GarlicOS systems" Description="Console handheld RG35XX GarlicOS media for all handheld consoles" Author="gljubojevic"/>
-	<Viewport Color="#00000000" Width="640" Height="480"/>
+	<Viewport Color="#ff000000" Width="640" Height="480"/>
 	<Drawings>
 		<!-- 9 "GB"	"Nintendo Game Boy" -->
 		<Item Type="Screenshot">

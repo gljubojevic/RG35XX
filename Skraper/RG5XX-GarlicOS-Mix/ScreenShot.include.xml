@@ -6,7 +6,7 @@
 		This is used to produce a perfect centered screenshot in the middle of a black rectangle
 		The resulting image will be projected on the Cabinet screen area -->
 		<Item Type ="Screenshot" >
-			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Antialiasing="High" Anchor="VCenterHCenter" />
+			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Antialiasing="None" Anchor="VCenterHCenter" />
 			<Fallback Type="ScreenshotTitle">
 				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
 			</Fallback>
