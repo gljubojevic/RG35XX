@@ -5,7 +5,7 @@ RG35XX handheld console config, and info.
 
 ## Official firmware
  - [Official Firmware download page](https://win.anbernic.com/download/270.html)
-   - [RG35XX Dual System Firmware, Official + Garlic OS, includes SD card content 64GB and 128GB](https://drive.google.com/drive/folders/1tJOUt3hW6VwbqgsCRb96TMQz6yRA2GAn?usp=sharing)
+   - [RG35XX Dual System Firmware, Official + GarlicOS, includes SD card content 64GB and 128GB](https://drive.google.com/drive/folders/1tJOUt3hW6VwbqgsCRb96TMQz6yRA2GAn?usp=sharing)
    - [RG35XX-EN-64-221223, Official](https://drive.google.com/drive/folders/1HfGCxkratM_zYiYfGWCrHZ1AynO3hIwU?usp=share_link)
    - [RG35XX 20221212 EN](https://drive.google.com/drive/folders/19gmd_0c9qQl4ttTeaYjT3qjeDawallO9?usp=sharing)
 
@@ -21,8 +21,8 @@ Currently only one Image MIX is available [RG5XX-GarlicOS-Mix](./Skraper/RG5XX-G
 
 
 ## GarlicOS
-Quick guide to Garlic OS
-![quick guide to Garlic OS](./GarlicOS/quick-guide-to-garlicos-shortcuts.png)
+Quick guide to GarlicOS
+![quick guide to GarlicOS](./GarlicOS/quick-guide-to-garlicos-shortcuts.png)
 
 ### Additional GarlicOS tips
 - The battery indicator on this device is not accurate, due to some voltage reading issues with the hardware. You should expect about 3-4 hours of battery life altogether, even if the indicator started otherwise.
