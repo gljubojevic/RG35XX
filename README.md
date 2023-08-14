@@ -24,6 +24,12 @@ Currently only one Image MIX is available [RG5XX-GarlicOS-Mix](./Skraper/RG5XX-G
 Quick guide to GarlicOS
 ![quick guide to GarlicOS](./GarlicOS/quick-guide-to-garlicos-shortcuts.png)
 
+### GarlicOS Tools
+- [Garlic press](https://github.com/prosthetichead/GarlicPress)
+
+### GarlicOS tips collection
+- [GarlicOS tips](https://gist.github.com/milnak/a288ddb7b0e1e51d251b2121baa03685)
+
 ### Additional GarlicOS tips
 - The battery indicator on this device is not accurate, due to some voltage reading issues with the hardware. You should expect about 3-4 hours of battery life altogether, even if the indicator started otherwise.
 - While in a game, tap the MENU button to return to the GarlicOS menu. It will save your progress when you exit the game. If tapping the MENU button doesn’t work, try double-tapping the button, that will usually do the trick.
