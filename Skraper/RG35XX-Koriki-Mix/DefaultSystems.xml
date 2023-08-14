@@ -9,14 +9,14 @@
 			</Fallback>
 		</Item>
 		<Item Type="Box3D">
-			<Display X="98%" Y="98%" Width="30%" Height="40%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
+			<Display X="100%" Y="100%" Width="30%" Height="40%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
 		</Item>
 		<Item Type="Wheel">
-			<Display X="50%" Y="0%" Width="40%" Height="30%" Anchor="TopHCenter" />
+			<Display X="50%" Y="0%" Width="70%" Height="30%" Anchor="TopHCenter" />
 		</Item>
 		<!-- SystemPhoto on bottom left -->
 		<Item Type="SystemPhoto">
-			<Display X="2%" Y="98%" Width="35%" Height="40%" Anchor="BottomLeft" />
+			<Display X="0%" Y="100%" Width="30%" Height="40%" Anchor="BottomLeft" />
 			<Fallback Type="SystemPicture">
 				<Fallback Type="SystemWheel">
 					<Fallback Type="Support" />
