@@ -1,9 +1,9 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX Koriki Default" LongName="RG35XX Koriki Default system" Description="RG35XX Koriki media for all emulation platforms" Author="gljubojevic"/>
-	<Viewport Color="#ff000000" Width="348" Height="291"/>
+	<Viewport Color="#00000000" Width="348" Height="291"/>
 	<Drawings>
 		<Item Type="Screenshot">
-			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>
+			<Display X="50%" Y="50%" Width="100%" Height="100%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None" Transparency="0.0"/>
 			<Fallback Type="ScreenshotTitle">
 				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
 			</Fallback>

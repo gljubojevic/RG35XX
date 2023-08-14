@@ -1,6 +1,6 @@
 <ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Information ShortName="RG35XX Koriki" LongName="RG35XX Koriki" Description="RG35XX Koriki media for all emulation platforms" Author="gljubojevic"/>
-	<Viewport Color="#ff000000" Width="348" Height="291"/>
+	<Viewport Color="#00000000" Width="348" Height="291"/>
 	<Drawings>
 		<!-- Arcade Systems 
 		NOTE: nested include doesn`t work so needs to be embedded -->
