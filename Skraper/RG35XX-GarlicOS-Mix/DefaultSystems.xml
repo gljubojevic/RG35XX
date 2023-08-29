@@ -3,18 +3,17 @@
 	<Viewport Color="#ff000000" Width="640" Height="480"/>
 	<Drawings>
 		<Item Type="Screenshot">
-			<Display X="100%" Y="50%" Width="1000%" Height="100%" KeepRatio="true" Anchor="VCenterRight" Antialiasing="None" Transparency="0.0"/>
+			<Display X="50%" Y="50%" Width="110%" Height="110%" KeepRatio="true" Anchor="VCenterHCenter" Antialiasing="None" />
 			<Fallback Type="ScreenshotTitle">
 				<Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
 			</Fallback>
 		</Item>
 		<Item Type="Box3D">
-			<Display X="98%" Y="95%" Width="30%" Height="40%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
-			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
+			<Display X="98%" Y="90%" Width="30%" Height="40%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
+			<Fallback Type="Support" />
 		</Item>
 		<Item Type="Wheel">
 			<Display X="50%" Y="0%" Width="40%" Height="30%" Anchor="TopHCenter" />
-			<!-- Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/ -->
 		</Item>
 		<!-- System Wheel on bottom left -->
 		<Item Type="SystemWheel">

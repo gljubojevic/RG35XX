@@ -92,7 +92,7 @@
 			<Fallback Type="LocalFile" LocalFilePath="bezel-4-3_%SYSTEM%.png" />
 		</Item>
 		<Item Type="Support">
-			<Display X="96%" Y="96%" Width="35%" Height="35%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
+			<Display X="96%" Y="90%" Width="35%" Height="35%" KeepRatio="true" Anchor="BottomRight" Antialiasing="Medium"/>
 		</Item>
 		<Item Type="Wheel">
 			<Display X="50%" Y="0%" Width="40%" Height="30%" Anchor="TopHCenter" />
