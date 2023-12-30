@@ -79,7 +79,7 @@
 			</Children>
 		</Item>
 		<!-- Default for all other systems, Computer, Vitrual machines -->
-		<Item IfSystem="IsNotInTheList:75,183,6,7,8,26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104,9,12,10,21,12,52,28,90,127,108,207,25,11,66,65,43,113,77,76" Type="Include" LocalFilePath="DefaultSystems.xml">
+		<Item IfSystem="IsNotInTheList:75,183,6,7,8,26,134,80,3,106,40,142,115,27,1,2,142,70,104,29,31,114,72,57,107,109,20,41,105,4,2,19,216,102,104,9,12,10,21,12,52,28,90,127,108,207,25,11,66,65,43,113,77,76,186,148,158,150,155,167,195,157,191,181" Type="Include" LocalFilePath="DefaultSystems.xml">
 			<Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft" />
 		</Item>
 		<!-- GarlicOS RG35XX Controls overlay -->
